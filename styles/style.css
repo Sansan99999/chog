@@ -1,44 +1,95 @@
+/* Global Styles */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    background-color: #6a0dad; /* Ungu */
-    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.header {
+    background-color: #007BFF;
     color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-#game-container {
-    width: 100%;
-    max-width: 800px;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-canvas {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-#connectWalletBtn {
-    padding: 12px 24px;
-    font-size: 18px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: #ffffff;
-    color: #000000;
-}
-
-#walletAddress {
-    margin-top: 15px;
-    font-size: 16px;
-    word-break: break-all;
+.betting-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
     text-align: center;
 }
+
+.betting-card h2 {
+    margin-bottom: 20px;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.teams label {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.vs {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.live-score {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.live-score h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+    }
