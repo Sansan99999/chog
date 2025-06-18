@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taruh Bola | Live Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>⚽ Taruh Bola</h1>
+        <p>Make your prediction and follow the live score!</p>
+    </header>
+
+    <main class="container">
+        <section class="betting-card">
+            <h2>Select Your Team</h2>
+            <form id="betForm">
+                <div class="teams">
+                    <label>
+                        <input type="radio" name="team" value="Team A" required>
+                        <span>Team A</span>
+                    </label>
+                    <span class="vs">VS</span>
+                    <label>
+                        <input type="radio" name="team" value="Team B" required>
+                        <span>Team B</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Submit Prediction</button>
+            </form>
+            <div id="result" class="result"></div>
+        </section>
+
+        <section class="history-card">
+            <h2>Betting History</h2>
+            <ul id="historyList" class="history-list">
+                <li>No bets yet.</li>
+            </ul>
+        </section>
+
+        <section class="live-score">
+            <h2>Live Score</h2>
+            <iframe src="https://www.sofascore.com/embed/tournament/17" width="100%" height="500" frameborder="0"></iframe>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Taruh Bola. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
