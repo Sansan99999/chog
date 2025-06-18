@@ -1,19 +1,44 @@
 body {
     margin: 0;
+    padding: 0;
     background-color: #000;
     font-family: Arial, sans-serif;
-    text-align: center;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 800px;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100% !important;
+    height: 100% !important;
 }
 
 #connectWalletBtn {
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 12px 24px;
     font-size: 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 #walletAddress {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 16px;
+    word-break: break-all;
+    text-align: center;
 }
